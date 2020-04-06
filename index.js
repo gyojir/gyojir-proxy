@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use(['/mangas', '/admin'], createProxyMiddleware({
-  target: 'https://gyojir.com',
+  target: 'https://gyojir.herokuapp.com',
   changeOrigin: true
 }));
 
